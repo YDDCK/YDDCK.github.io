@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMEN PROGRAMACION WEB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            margin-bottom: 0px;
+            margin-top: 0;
+        }
+
+		header {
+        background-color: #66a3ff;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        display: flex; /* Agregamos flexbox para alinear elementos */
+        align-items: center; /* Alineamos verticalmente los elementos dentro del encabezado */
+		}
+			 header img {
+        max-width: 100px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+        nav {
+            background-color: #99c2ff;
+            color: white;
+            padding: 1em;
+        }
+
+        section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            display: block;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background-color: #66a3ff;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(0);
+        }
+
+        .footer-container {
+            background-color: #336699;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(0);
+        }
+
+        .contact-section,
+        .social-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .contact-form,
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .hide {
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+			<img src="logo.png"style="max-width: 100px; height: auto; margin-right: 10px;">
+			<h1>FOOT-RUNNERS SNEAKER STORE</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Conoce nuestro amplio catálogo de sneakers para todo tipo de deporte: desde Baloncesto, Running, Futbol, y Lifestyle.</li>
+            <li>tenemos precios accesibles para cualquier tipo de presupuesto.</li>
+            <li>Manejamos envíos a todo México sin costo extra.</li>
+            <li>Aceptamos pagos en efectivo y con tarjeta</li>
+            <li>Aceptamos cambios y devoluciones a partir de los primeros 30 días de tu compra</li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Calzado deportivo</h2>
+
+        <table>
+            <!-- Repite esta fila para cada producto -->
+            <tr>
+                <th>Producto</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td><img src="producto1.jpg" alt="Zapatillas Deportivas"></td>
+                <td>Tenis Asics Gel-Lyte 3 Mineral Beige.<br>Perfectos para tus entrenamientos diarios.</td>
+                <td>$2099</td>
+            </tr>
+            <tr>
+                <td><img src="producto2.jpg" alt="Zapatillas Deportivas"></td>
+                <td>Tenis Nike Blazer Low 77 Jumbo.<br>Estos estan diseñados para condiciones extremas de escalada o correr en zonas montañosas, especificamente diseñados para los climas mas extremos</td>
+                <td>$4000</td>
+            </tr>
+            <tr>
+                <td><img src="producto3.jpg" alt="Zapatillas Deportivas"></td>
+                <td>Tenis Nike Dunk High Pale Vainilla.<br>Diseñados para ellas, resaltando en diseño, comodos y oara todo tipo de vestimenta ya que combinan con todo.</td>
+                <td>$2350</td>
+            </tr>
+            <tr>
+                <td><img src="producto4.jpg" alt="Zapatillas Deportivas"></td>
+                <td>Tenis Nike Air Force 1 Shadow Triple White.<br>Diseñados por Tinker Hatfield estos ofrecen una durabilidad prolongada y ademas incluyen tecnologia GORE_TEX que los hacem a prueba de agua.</td>
+                <td>$5600</td>
+            </tr>
+            <tr>
+                <td><img src="producto5.jpg" alt="Zapatillas Deportivas"></td>
+                <td>Tenis Nike Air Force 1 PLT.AF.ORM Triple White.<br>Diseñados en la epoca de los 80, estos tenis jamas envejecen, con un estilo retro y clasico, todos querran tenerlos.</td>
+                <td>$1499</td>
+            </tr>
+            <tr>
+                <td><img src="producto6.jpg" alt="Zapatillas Deportivas"></td>
+                <td>Tenis Nike JA 1 Day One.<br>Con su capsula de aire "Air Zoom" destacaras en el juego ofreciendo explosividad en los arranques.</td>
+                <td>$3500</td>
+            </tr>
+            <tr>
+                <td><img src="producto7.jpg" alt="Zapatillas Deportivas"></td>
+                <td>Tenis Nike KD 16 Ready Play.<br>Con los tenis del mismisimo Kevin Durant, domina la cancha con sus materiales de Nike React, ofreciendo una amortiguacion elite, diseñada para que juegues como si pisaras una nube.</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td><img src="producto8.jpg" alt="Zapatillas Deportivas"></td>
+                <td>Tenis Nike Freak 5 Hot Pink.<br>Recomendados por el jugador de baloncesto Giannis Antetonkounpo, estos tenis de haran destacar en la duela por su traccion y durabilidad.</td>
+                <td>$2700</td>
+            </tr>
+            <!-- Fin de la repetición -->
+        </table>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container" id="footer-container">
+            <div class="contact-section">
+                <h3>Contacto</h3>
+                <div class="contact-form">
+                    <form id="contact-form" action="#" method="POST">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                        <button type="button" id="enviar-mensaje">Enviar mensaje</button>
+                    </form>
+                    <div id="mensaje-exito" style="display: none; color: green; margin-top: 10px;">
+                        ¡Datos recibidos con éxito!
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-section">
+                <h3>Síguenos en redes sociales</h3>
+                <div class="social-icons">
+                    <!-- Tus iconos sociales aquí -->
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <!-- Puedes agregar más iconos y enlaces según tus necesidades -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contact-form');
+            const enviarBtn = document.getElementById('enviar-mensaje');
+            const mensajeExito = document.getElementById('mensaje-exito');
+
+            enviarBtn.addEventListener('click', function () {
+                // Aquí podrías agregar validaciones del formulario si es necesario
+
+                // Simulación de envío exitoso
+                mensajeExito.style.display = 'block';
+
+                // Restablecer el formulario después de 2 segundos
+                setTimeout(function () {
+                    mensajeExito.style.display = 'none';
+                    form.reset();
+                }, 2000);
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
